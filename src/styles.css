@@ -1,0 +1,22 @@
+h1>span {
+    color: red;
+    font-family: 'Trebuchet MS', 'lucida Sans Unicode';
+}
+
+body {
+    padding: 4rem;
+}
+
+button {
+    color: whitesmoke;
+    background-color: teal;
+    padding: 0.5rem 1rem;
+    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.3);
+    box-sizing: none;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: darkslategray;
+}
