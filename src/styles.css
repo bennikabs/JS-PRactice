@@ -1,22 +1,141 @@
-h1>span {
-    color: red;
-    font-family: 'Trebuchet MS', 'lucida Sans Unicode';
-}
+  :root {
+      --secondary-color: white;
+  }
 
-body {
-    padding: 4rem;
-}
+  .bg {
+      background-image: url('../images/Geschwister.jpg');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      height: auto;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
 
-button {
-    color: whitesmoke;
-    background-color: teal;
-    padding: 0.5rem 1rem;
-    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.3);
-    box-sizing: none;
-    cursor: pointer;
+  body {
+      background-color: black;
+  }
 
-}
+  .text-overlay {
+      color: var(--secondary-color);
+      text-align: center;
+      padding: 15rem;
+  }
 
-button:hover {
-    background-color: darkslategray;
-}
+  .text-overlay>h1 {
+      font-size: 6vw;
+  }
+
+  .text-overlay>p {
+      font-size: 2vw;
+      font-weight: 100;
+      line-height: 1.2em;
+  }
+
+  button {
+      font-size: 1.5rem;
+      border-radius: 1.5rem;
+      padding: 0.5rem 1.5rem;
+      outline: none;
+      cursor: pointer;
+      background-color: black;
+      box-shadow: 0 0 12px 8px white;
+      color: var(--secondary-color);
+  }
+
+  button:hover {
+      outline: none;
+      background-color: var(--secondary-color);
+      color: black;
+  }
+
+  .container {
+      display: flex;
+      position: relative;
+
+  }
+
+  .container>.image-1>img {
+      display: flex;
+      object-fit: cover;
+      width: 29.68rem;
+      height: 29.68rem;
+  }
+
+  .image-1 {
+      position: relative;
+  }
+
+  .image-1>.image-text {
+      position: absolute;
+      padding: 1rem;
+      color: var(--secondary-color);
+      bottom: 0;
+      left: 0;
+  }
+
+  .image-text>h2 {
+      font-size: 32px;
+  }
+
+  .image-text>p {
+      font-size: 26px;
+  }
+
+
+  @media(max-width:912px) {
+      .bodyContainer {
+          overflow-x: hidden;
+      }
+
+      .text-overlay {
+          padding: 5rem 0 3rem 0;
+
+      }
+
+      h1 {
+          font-size: 24px;
+      }
+
+      .container {
+          display: grid;
+          place-items: center;
+          filter: none;
+      }
+
+      .container>.image-1>img {
+          object-fit: cover;
+          width: 20.68rem;
+          height: 20.68rem;
+          filter: none;
+      }
+
+      .image-1 {
+          box-shadow: 15px 20px 90px 60px black;
+          padding: 2px;
+      }
+
+      .image-text>h2 {
+          font-size: 26px;
+      }
+
+      .image-text>p {
+          font-size: 16px;
+          width: 200px;
+      }
+
+      button {
+          font-size: 0.7rem;
+          font-weight: 900;
+
+      }
+
+      button:hover {
+          background-color: var(--secondary-color);
+          color: black;
+      }
+
+      .blur {
+          background-image: url('../images/Blurground.jpg');
+          filter: brightness(0.9)
+      }
+
+  }
